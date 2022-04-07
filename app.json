@@ -1,0 +1,30 @@
+{
+  "id": "05c20b8f-de01-4f86-a298-d5577c1aed90",
+  "name": "Escrow Manager",
+  "publisher": "Incite Automation",
+  "version": "1.0.1.90",
+  "runtime": "4.0",
+  "showMyCode": true,
+  "target": "Cloud",
+  "platform": "19.0.36528.36625",
+  "dependencies": [
+    {
+      "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "name": "System Application",
+      "version": "1.0.0.0",
+      "publisher": "Microsoft"
+    },
+    {
+      "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "name": "Base Application",
+      "version": "15.0.0.0",
+      "publisher": "Microsoft"
+    }
+  ],
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50200
+    }
+  ]
+}

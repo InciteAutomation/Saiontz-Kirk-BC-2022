@@ -1,0 +1,1894 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>8466901f-61c3-4324-b746-37ff2c7dd44d</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix2">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>5.28334in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Shortcut_Dimension_Code1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Shortcut_Dimension_Code.Value</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Shortcut_Dimension_Code1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="LineAmount1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!LineAmount.Value</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Format>'$'#,0.00</Format>
+                                    <Color>#333333</Color>
+                                    <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>LineAmount1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details1" />
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                  <Visibility>
+                    <Hidden>=Not(IsNumeric(Fields!LineAmount.Value))</Hidden>
+                  </Visibility>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Top>3.66945in</Top>
+            <Left>1.49865in</Left>
+            <Height>0.25in</Height>
+            <Width>6.28334in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>5.28334in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.34702in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Shortcut_Dimension_Code">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Shortcut_Dimension_Code.Value</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Shortcut_Dimension_Code</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="LineAmount">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!LineAmount.Value</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Format>'$'#,0.00</Format>
+                                    <Color>#333333</Color>
+                                    <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>LineAmount</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details" />
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                  <Visibility>
+                    <Hidden>=Not(IsNumeric(Fields!LineAmount.Value))</Hidden>
+                  </Visibility>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Filters>
+              <Filter>
+                <FilterExpression>=Fields!LineAmount.Value</FilterExpression>
+                <Operator>NotEqual</Operator>
+                <FilterValues>
+                  <FilterValue DataType="Integer">0</FilterValue>
+                </FilterValues>
+              </Filter>
+            </Filters>
+            <Top>1.205in</Top>
+            <Left>1.49865in</Left>
+            <Height>0.25in</Height>
+            <Width>6.63036in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Textbox Name="Textbox84">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>C</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>IDAutomationMICR</FontFamily>
+                      <FontSize>14pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Fields!DocNo.Value</Value>
+                    <Style>
+                      <FontFamily>IDAutomationMICR</FontFamily>
+                      <FontSize>14pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>c a055003201a2000026881984ct</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>IDAutomationMICR</FontFamily>
+                      <FontSize>14pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox84</rd:DefaultName>
+            <Top>9.25142in</Top>
+            <Left>1.50083in</Left>
+            <Height>0.25in</Height>
+            <Width>4.93452in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Line Name="Line2">
+            <Top>8.5681in</Top>
+            <Left>4.37901in</Left>
+            <Height>0in</Height>
+            <Width>3.75in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Textbox Name="Textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>SAIONTZ &amp; KIRK, P.A. - IOLTA ACCOUNT</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.30917in</Top>
+            <Left>0.3425in</Left>
+            <Height>0.25in</Height>
+            <Width>2.85417in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="CheckNoText">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Check No.</Label>
+                    <Value>=First(Fields!CheckNoText.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>CheckNoText</rd:DefaultName>
+            <Top>0.30917in</Top>
+            <Left>7.40202in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PostingDesc">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>PostingDescription</Label>
+                    <Value>=First(Fields!PostingDesc.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PostingDesc</rd:DefaultName>
+            <Top>0.78in</Top>
+            <Left>1.50083in</Left>
+            <Height>0.25in</Height>
+            <Width>2.5625in</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>SAIONTZ &amp; KIRK, P.A. - IOLTA ACCOUNT</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>2.85417in</Top>
+            <Left>0.3425in</Left>
+            <Height>0.25in</Height>
+            <Width>2.85417in</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="CheckNoText2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Check No.</Label>
+                    <Value>=First(Fields!CheckNoText.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>CheckNoText</rd:DefaultName>
+            <Top>2.85417in</Top>
+            <Left>7.40202in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PostingDesc2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>PostingDescription</Label>
+                    <Value>=First(Fields!PostingDesc.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PostingDesc</rd:DefaultName>
+            <Top>3.24167in</Top>
+            <Left>1.49865in</Left>
+            <Height>0.25in</Height>
+            <Width>2.5625in</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox12">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>SAIONTZ &amp; KIRK, P.A.</Value>
+                    <Style>
+                      <FontSize>14pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>IOLTA ACCOUNT</Value>
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>3 SOUTH FREDERICK ST. STE 900</Value>
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>BALTIMORE, MD 21202</Value>
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>(410) 539-6339</Value>
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox12</rd:DefaultName>
+            <Top>6.08417in</Top>
+            <Left>1.50083in</Left>
+            <Height>0.83333in</Height>
+            <Width>2.1875in</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox13">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Wells Fargo, N.A.</Value>
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox13</rd:DefaultName>
+            <Top>6.08417in</Top>
+            <Left>4.65917in</Left>
+            <Height>0.25in</Height>
+            <Width>1.2625in</Width>
+            <ZIndex>11</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox15">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>PAY TO THE ORDER OF</Value>
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>6.95501in</Top>
+            <Left>0.20083in</Left>
+            <Height>0.41667in</Height>
+            <Width>1in</Width>
+            <ZIndex>12</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="CheckNoText3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Check No.</Label>
+                    <Value>=First(Fields!CheckNoText.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>CheckNoText</rd:DefaultName>
+            <Top>5.71612in</Top>
+            <Left>7.40202in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>13</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox5">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>DOLLARS</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox5</rd:DefaultName>
+            <Top>7.20144in</Top>
+            <Left>6.91473in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>14</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox9">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>MEMO</Value>
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox9</rd:DefaultName>
+            <Top>8.68198in</Top>
+            <Left>0.20083in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>15</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox11">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>AUTHORIZED SIGNATURE</Value>
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox11</rd:DefaultName>
+            <Top>8.68198in</Top>
+            <Left>5.20719in</Left>
+            <Height>0.25in</Height>
+            <Width>2.07282in</Width>
+            <ZIndex>16</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox14">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>VOID AFTER 90 DAYS</Value>
+                    <Style>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox14</rd:DefaultName>
+            <Top>7.86948in</Top>
+            <Left>5.73417in</Left>
+            <Height>0.25in</Height>
+            <Width>1.05in</Width>
+            <ZIndex>17</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="LineAmount3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Total</Label>
+                    <Value>=Sum(Fields!LineAmount.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <Format>'$'#,0.00;('$'#,0.00)</Format>
+                      <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>LineAmount</rd:DefaultName>
+            <Top>7.20144in</Top>
+            <Left>5.73417in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>18</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Client_Name">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Client Name</Label>
+                    <Value>=First(Fields!Client_Name.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Client_Name</rd:DefaultName>
+            <Top>7.12168in</Top>
+            <Left>1.49865in</Left>
+            <Height>0.25in</Height>
+            <Width>2.04583in</Width>
+            <ZIndex>19</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Memo2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Memo</Label>
+                    <Value>=First(Fields!Memo.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Memo2</rd:DefaultName>
+            <Top>8.68198in</Top>
+            <Left>1.50083in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>20</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Client_Name1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Client Name</Label>
+                    <Value>=First(Fields!Client_Name.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>/</Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Fields!Case_Number.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Client_Name1</rd:DefaultName>
+            <Top>2.17167in</Top>
+            <Left>0.3425in</Left>
+            <Height>0.25in</Height>
+            <Width>6.44167in</Width>
+            <ZIndex>21</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Client_Name3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Client Name</Label>
+                    <Value>=First(Fields!Client_Name.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>/</Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Fields!Case_Number.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Client_Name1</rd:DefaultName>
+            <Top>4.72849in</Top>
+            <Left>0.67125in</Left>
+            <Height>0.25in</Height>
+            <Width>5.7641in</Width>
+            <ZIndex>22</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Client_Name2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Client Name</Label>
+                    <Value>=First(Fields!Client_Name.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>/</Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Fields!Case_Number.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Client_Name1</rd:DefaultName>
+            <Top>9.00142in</Top>
+            <Left>0.20083in</Left>
+            <Height>0.25in</Height>
+            <Width>4.93692in</Width>
+            <ZIndex>23</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="LineAmount4">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Total</Label>
+                    <Value>=Sum(Fields!LineAmount.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <Format>'$'#,0.00;('$'#,0.00)</Format>
+                      <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>LineAmount</rd:DefaultName>
+            <Top>4.72849in</Top>
+            <Left>6.78199in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>24</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="LineAmount5">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Total</Label>
+                    <Value>=Sum(Fields!LineAmount.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <Format>'$'#,0.00;('$'#,0.00)</Format>
+                      <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>LineAmount</rd:DefaultName>
+            <Top>2.17167in</Top>
+            <Left>6.78199in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>25</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Document_Date">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Document Date</Label>
+                    <Value>=First(Fields!Document_Date.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <Format>d</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Document_Date</rd:DefaultName>
+            <Top>0.78in</Top>
+            <Left>6.78199in</Left>
+            <Height>0.25in</Height>
+            <Width>1.35138in</Width>
+            <ZIndex>26</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Document_Date2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Document Date</Label>
+                    <Value>=First(Fields!Document_Date.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <Format>d</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Document_Date</rd:DefaultName>
+            <Top>3.24167in</Top>
+            <Left>6.78199in</Left>
+            <Height>0.25in</Height>
+            <Width>1.35138in</Width>
+            <ZIndex>27</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Document_Date3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Document Date</Label>
+                    <Value>=First(Fields!Document_Date.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <Format>d</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Document_Date</rd:DefaultName>
+            <Top>6.08417in</Top>
+            <Left>6.78199in</Left>
+            <Height>0.25in</Height>
+            <Width>1.35138in</Width>
+            <ZIndex>28</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="PrnChkDescriptionLine_CheckStyle__US_1_">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Label>Description Line</Label>
+                    <Value>=Last(Fields!PrnChkDescriptionLine_CheckStyle__US_1_.Value, "DataSet_Result")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>PrnChkDescriptionLine_CheckStyle__US_1_</rd:DefaultName>
+            <Top>7.99111in</Top>
+            <Left>1.35916in</Left>
+            <Height>0.25in</Height>
+            <Width>2.70417in</Width>
+            <ZIndex>29</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <Height>10in</Height>
+        <Style />
+      </Body>
+      <Width>8.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>
+  Public Function BlankZero(ByVal Value As Decimal)
+      if Value = 0 then
+          Return ""
+      end if
+      Return Value
+  End Function
+
+  Public Function BlankPos(ByVal Value As Decimal)
+      if Value &gt; 0 then
+          Return ""
+      end if
+      Return Value
+  End Function
+
+  Public Function BlankZeroAndPos(ByVal Value As Decimal)
+      if Value &gt;= 0 then
+          Return ""
+      end if
+      Return Value
+  End Function
+
+  Public Function BlankNeg(ByVal Value As Decimal)
+      if Value &lt; 0 then
+          Return ""
+      end if
+      Return Value
+  End Function
+
+  Public Function BlankNegAndZero(ByVal Value As Decimal)
+      if Value &lt;= 0 then
+          Return ""
+      end if
+      Return Value
+  End Function
+  </Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="GenJnlLine_Journal_Template_Name">
+          <DataField>GenJnlLine_Journal_Template_Name</DataField>
+        </Field>
+        <Field Name="Client_Name">
+          <DataField>Client_Name</DataField>
+        </Field>
+        <Field Name="Memo">
+          <DataField>Memo</DataField>
+        </Field>
+        <Field Name="Balance_Description">
+          <DataField>Balance_Description</DataField>
+        </Field>
+        <Field Name="Shortcut_Dimension_Code">
+          <DataField>Shortcut_Dimension_Code</DataField>
+        </Field>
+        <Field Name="Posting_Date">
+          <DataField>Posting_Date</DataField>
+        </Field>
+        <Field Name="Document_Date">
+          <DataField>Document_Date</DataField>
+        </Field>
+        <Field Name="GenJnlLine_Journal_Batch_Name">
+          <DataField>GenJnlLine_Journal_Batch_Name</DataField>
+        </Field>
+        <Field Name="GenJnlLine_Line_No_">
+          <DataField>GenJnlLine_Line_No_</DataField>
+        </Field>
+        <Field Name="Case_Number">
+          <DataField>Case_Number</DataField>
+        </Field>
+        <Field Name="CheckToAddr_1_">
+          <DataField>CheckToAddr_1_</DataField>
+        </Field>
+        <Field Name="CheckDateText">
+          <DataField>CheckDateText</DataField>
+        </Field>
+        <Field Name="CheckNoText">
+          <DataField>CheckNoText</DataField>
+        </Field>
+        <Field Name="PageNo">
+          <DataField>PageNo</DataField>
+        </Field>
+        <Field Name="CheckPages_Number">
+          <DataField>CheckPages_Number</DataField>
+        </Field>
+        <Field Name="CheckNoTextCaption">
+          <DataField>CheckNoTextCaption</DataField>
+        </Field>
+        <Field Name="PreprintedStub">
+          <DataField>PreprintedStub</DataField>
+        </Field>
+        <Field Name="LineAmount">
+          <DataField>LineAmount</DataField>
+        </Field>
+        <Field Name="LineAmountFormat">
+          <DataField>LineAmountFormat</DataField>
+        </Field>
+        <Field Name="LineDiscount">
+          <DataField>LineDiscount</DataField>
+        </Field>
+        <Field Name="LineDiscountFormat">
+          <DataField>LineDiscountFormat</DataField>
+        </Field>
+        <Field Name="LineAmount___LineDiscount">
+          <DataField>LineAmount___LineDiscount</DataField>
+        </Field>
+        <Field Name="LineAmount___LineDiscountFormat">
+          <DataField>LineAmount___LineDiscountFormat</DataField>
+        </Field>
+        <Field Name="DocNo">
+          <DataField>DocNo</DataField>
+        </Field>
+        <Field Name="DocDate">
+          <DataField>DocDate</DataField>
+        </Field>
+        <Field Name="PostingDesc">
+          <DataField>PostingDesc</DataField>
+        </Field>
+        <Field Name="PrintSettledLoop_Number">
+          <DataField>PrintSettledLoop_Number</DataField>
+        </Field>
+        <Field Name="LineAmountCaption">
+          <DataField>LineAmountCaption</DataField>
+        </Field>
+        <Field Name="LineDiscountCaption">
+          <DataField>LineDiscountCaption</DataField>
+        </Field>
+        <Field Name="AmountCaption">
+          <DataField>AmountCaption</DataField>
+        </Field>
+        <Field Name="DocNoCaption">
+          <DataField>DocNoCaption</DataField>
+        </Field>
+        <Field Name="DocDateCaption">
+          <DataField>DocDateCaption</DataField>
+        </Field>
+        <Field Name="Posting_DescriptionCaption">
+          <DataField>Posting_DescriptionCaption</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_5_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__CA_5_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_4_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__CA_4_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_3_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__CA_3_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_2_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__CA_2_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_1_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__CA_1_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckAmountText_CheckStyle__US_">
+          <DataField>PrnChkCheckAmountText_CheckStyle__US_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckDateText_CheckStyle__US_">
+          <DataField>PrnChkCheckDateText_CheckStyle__US_</DataField>
+        </Field>
+        <Field Name="PrnChkDescriptionLine_CheckStyle__US_2_">
+          <DataField>PrnChkDescriptionLine_CheckStyle__US_2_</DataField>
+        </Field>
+        <Field Name="PrnChkDescriptionLine_CheckStyle__US_1_">
+          <DataField>PrnChkDescriptionLine_CheckStyle__US_1_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__US_1_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__US_1_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__US_2_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__US_2_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__US_4_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__US_4_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__US_3_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__US_3_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__US_5_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__US_5_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__US_4_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__US_4_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__US_6_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__US_6_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__US_5_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__US_5_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__US_3_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__US_3_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckNoText_CheckStyle__US_">
+          <DataField>PrnChkCheckNoText_CheckStyle__US_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__US_2_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__US_2_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__US_1_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__US_1_</DataField>
+        </Field>
+        <Field Name="TotalLineAmount">
+          <DataField>TotalLineAmount</DataField>
+        </Field>
+        <Field Name="TotalLineAmountFormat">
+          <DataField>TotalLineAmountFormat</DataField>
+        </Field>
+        <Field Name="TotalText">
+          <DataField>TotalText</DataField>
+        </Field>
+        <Field Name="PrnChkVoidText_CheckStyle__US_">
+          <DataField>PrnChkVoidText_CheckStyle__US_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_1_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__CA_1_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_2_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__CA_2_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_3_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__CA_3_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_4_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__CA_4_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_5_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__CA_5_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_6_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__CA_6_</DataField>
+        </Field>
+        <Field Name="PrnChkDescriptionLine_CheckStyle__CA_1_">
+          <DataField>PrnChkDescriptionLine_CheckStyle__CA_1_</DataField>
+        </Field>
+        <Field Name="PrnChkDescriptionLine_CheckStyle__CA_2_">
+          <DataField>PrnChkDescriptionLine_CheckStyle__CA_2_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckDateText_CheckStyle__CA_">
+          <DataField>PrnChkCheckDateText_CheckStyle__CA_</DataField>
+        </Field>
+        <Field Name="PrnChkDateIndicator_CheckStyle__CA_">
+          <DataField>PrnChkDateIndicator_CheckStyle__CA_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckAmountText_CheckStyle__CA_">
+          <DataField>PrnChkCheckAmountText_CheckStyle__CA_</DataField>
+        </Field>
+        <Field Name="PrnChkVoidText_CheckStyle__CA_">
+          <DataField>PrnChkVoidText_CheckStyle__CA_</DataField>
+        </Field>
+        <Field Name="PrnChkCurrencyCode_CheckStyle__CA_">
+          <DataField>PrnChkCurrencyCode_CheckStyle__CA_</DataField>
+        </Field>
+        <Field Name="PrnChkCurrencyCode_CheckStyle__US_">
+          <DataField>PrnChkCurrencyCode_CheckStyle__US_</DataField>
+        </Field>
+        <Field Name="CheckNoText_Control1480000">
+          <DataField>CheckNoText_Control1480000</DataField>
+        </Field>
+        <Field Name="CheckDateText_Control1480021">
+          <DataField>CheckDateText_Control1480021</DataField>
+        </Field>
+        <Field Name="CheckToAddr_1__Control1480022">
+          <DataField>CheckToAddr_1__Control1480022</DataField>
+        </Field>
+        <Field Name="Stub2DocNoHeader">
+          <DataField>Stub2DocNoHeader</DataField>
+        </Field>
+        <Field Name="Stub2DocDateHeader">
+          <DataField>Stub2DocDateHeader</DataField>
+        </Field>
+        <Field Name="Stub2AmountHeader">
+          <DataField>Stub2AmountHeader</DataField>
+        </Field>
+        <Field Name="Stub2DiscountHeader">
+          <DataField>Stub2DiscountHeader</DataField>
+        </Field>
+        <Field Name="Stub2NetAmountHeader">
+          <DataField>Stub2NetAmountHeader</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_1_">
+          <DataField>Stub2LineAmount_1_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_1_Format">
+          <DataField>Stub2LineAmount_1_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_1_">
+          <DataField>Stub2LineDiscount_1_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_1_Format">
+          <DataField>Stub2LineDiscount_1_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_1____Stub2LineDiscount_1_">
+          <DataField>Stub2LineAmount_1____Stub2LineDiscount_1_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_1____Stub2LineDiscount_1_Format">
+          <DataField>Stub2LineAmount_1____Stub2LineDiscount_1_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_1_">
+          <DataField>Stub2DocDate_1_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_1_">
+          <DataField>Stub2DocNo_1_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_2_">
+          <DataField>Stub2LineAmount_2_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_2_Format">
+          <DataField>Stub2LineAmount_2_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_2_">
+          <DataField>Stub2LineDiscount_2_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_2_Format">
+          <DataField>Stub2LineDiscount_2_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_2____Stub2LineDiscount_2_">
+          <DataField>Stub2LineAmount_2____Stub2LineDiscount_2_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_2____Stub2LineDiscount_2_Format">
+          <DataField>Stub2LineAmount_2____Stub2LineDiscount_2_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_2_">
+          <DataField>Stub2DocDate_2_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_2_">
+          <DataField>Stub2DocNo_2_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_3_">
+          <DataField>Stub2LineAmount_3_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_3_Format">
+          <DataField>Stub2LineAmount_3_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_3_">
+          <DataField>Stub2LineDiscount_3_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_3_Format">
+          <DataField>Stub2LineDiscount_3_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_3____Stub2LineDiscount_3_">
+          <DataField>Stub2LineAmount_3____Stub2LineDiscount_3_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_3____Stub2LineDiscount_3_Format">
+          <DataField>Stub2LineAmount_3____Stub2LineDiscount_3_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_3_">
+          <DataField>Stub2DocDate_3_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_3_">
+          <DataField>Stub2DocNo_3_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_4_">
+          <DataField>Stub2LineAmount_4_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_4_Format">
+          <DataField>Stub2LineAmount_4_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_4_">
+          <DataField>Stub2LineDiscount_4_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_4_Format">
+          <DataField>Stub2LineDiscount_4_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_4____Stub2LineDiscount_4_">
+          <DataField>Stub2LineAmount_4____Stub2LineDiscount_4_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_4____Stub2LineDiscount_4_Format">
+          <DataField>Stub2LineAmount_4____Stub2LineDiscount_4_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_4_">
+          <DataField>Stub2DocDate_4_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_4_">
+          <DataField>Stub2DocNo_4_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_5_">
+          <DataField>Stub2LineAmount_5_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_5_Format">
+          <DataField>Stub2LineAmount_5_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_5_">
+          <DataField>Stub2LineDiscount_5_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_5_Format">
+          <DataField>Stub2LineDiscount_5_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_5____Stub2LineDiscount_5_">
+          <DataField>Stub2LineAmount_5____Stub2LineDiscount_5_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_5____Stub2LineDiscount_5_Format">
+          <DataField>Stub2LineAmount_5____Stub2LineDiscount_5_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_5_">
+          <DataField>Stub2DocDate_5_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_5_">
+          <DataField>Stub2DocNo_5_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_6_">
+          <DataField>Stub2LineAmount_6_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_6_Format">
+          <DataField>Stub2LineAmount_6_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_6_">
+          <DataField>Stub2LineDiscount_6_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_6_Format">
+          <DataField>Stub2LineDiscount_6_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_6____Stub2LineDiscount_6_">
+          <DataField>Stub2LineAmount_6____Stub2LineDiscount_6_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_6____Stub2LineDiscount_6_Format">
+          <DataField>Stub2LineAmount_6____Stub2LineDiscount_6_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_6_">
+          <DataField>Stub2DocDate_6_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_6_">
+          <DataField>Stub2DocNo_6_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_7_">
+          <DataField>Stub2LineAmount_7_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_7_Format">
+          <DataField>Stub2LineAmount_7_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_7_">
+          <DataField>Stub2LineDiscount_7_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_7_Format">
+          <DataField>Stub2LineDiscount_7_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_7____Stub2LineDiscount_7_">
+          <DataField>Stub2LineAmount_7____Stub2LineDiscount_7_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_7____Stub2LineDiscount_7_Format">
+          <DataField>Stub2LineAmount_7____Stub2LineDiscount_7_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_7_">
+          <DataField>Stub2DocDate_7_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_7_">
+          <DataField>Stub2DocNo_7_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_8_">
+          <DataField>Stub2LineAmount_8_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_8_Format">
+          <DataField>Stub2LineAmount_8_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_8_">
+          <DataField>Stub2LineDiscount_8_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_8_Format">
+          <DataField>Stub2LineDiscount_8_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_8____Stub2LineDiscount_8_">
+          <DataField>Stub2LineAmount_8____Stub2LineDiscount_8_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_8____Stub2LineDiscount_8_Format">
+          <DataField>Stub2LineAmount_8____Stub2LineDiscount_8_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_8_">
+          <DataField>Stub2DocDate_8_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_8_">
+          <DataField>Stub2DocNo_8_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_9_">
+          <DataField>Stub2LineAmount_9_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_9_Format">
+          <DataField>Stub2LineAmount_9_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_9_">
+          <DataField>Stub2LineDiscount_9_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_9_Format">
+          <DataField>Stub2LineDiscount_9_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_9____Stub2LineDiscount_9_">
+          <DataField>Stub2LineAmount_9____Stub2LineDiscount_9_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_9____Stub2LineDiscount_9_Format">
+          <DataField>Stub2LineAmount_9____Stub2LineDiscount_9_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_9_">
+          <DataField>Stub2DocDate_9_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_9_">
+          <DataField>Stub2DocNo_9_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_10_">
+          <DataField>Stub2LineAmount_10_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_10_Format">
+          <DataField>Stub2LineAmount_10_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_10_">
+          <DataField>Stub2LineDiscount_10_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_10_Format">
+          <DataField>Stub2LineDiscount_10_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_10____Stub2LineDiscount_10_">
+          <DataField>Stub2LineAmount_10____Stub2LineDiscount_10_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_10____Stub2LineDiscount_10_Format">
+          <DataField>Stub2LineAmount_10____Stub2LineDiscount_10_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_10_">
+          <DataField>Stub2DocDate_10_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_10_">
+          <DataField>Stub2DocNo_10_</DataField>
+        </Field>
+        <Field Name="TotalLineAmount_Control1480082">
+          <DataField>TotalLineAmount_Control1480082</DataField>
+        </Field>
+        <Field Name="TotalLineAmount_Control1480082Format">
+          <DataField>TotalLineAmount_Control1480082Format</DataField>
+        </Field>
+        <Field Name="TotalText_Control1480083">
+          <DataField>TotalText_Control1480083</DataField>
+        </Field>
+        <Field Name="Stub2PostingDescHeader">
+          <DataField>Stub2PostingDescHeader</DataField>
+        </Field>
+        <Field Name="Stub2PostingDescription_1_">
+          <DataField>Stub2PostingDescription_1_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDescription_2_">
+          <DataField>Stub2PostingDescription_2_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDescription_4_">
+          <DataField>Stub2PostingDescription_4_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDescription_3_">
+          <DataField>Stub2PostingDescription_3_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDescription_8_">
+          <DataField>Stub2PostingDescription_8_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDescription_7_">
+          <DataField>Stub2PostingDescription_7_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDescription_6_">
+          <DataField>Stub2PostingDescription_6_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDescription_5_">
+          <DataField>Stub2PostingDescription_5_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDescription_10_">
+          <DataField>Stub2PostingDescription_10_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDescription_9_">
+          <DataField>Stub2PostingDescription_9_</DataField>
+        </Field>
+        <Field Name="CheckToAddr_5_">
+          <DataField>CheckToAddr_5_</DataField>
+        </Field>
+        <Field Name="CheckToAddr_4_">
+          <DataField>CheckToAddr_4_</DataField>
+        </Field>
+        <Field Name="CheckToAddr_3_">
+          <DataField>CheckToAddr_3_</DataField>
+        </Field>
+        <Field Name="CheckToAddr_2_">
+          <DataField>CheckToAddr_2_</DataField>
+        </Field>
+        <Field Name="CheckToAddr_01_">
+          <DataField>CheckToAddr_01_</DataField>
+        </Field>
+        <Field Name="VoidText">
+          <DataField>VoidText</DataField>
+        </Field>
+        <Field Name="BankCurrencyCode">
+          <DataField>BankCurrencyCode</DataField>
+        </Field>
+        <Field Name="DollarSignBefore_CheckAmountText_DollarSignAfter">
+          <DataField>DollarSignBefore_CheckAmountText_DollarSignAfter</DataField>
+        </Field>
+        <Field Name="DescriptionLine_1__">
+          <DataField>DescriptionLine_1__</DataField>
+        </Field>
+        <Field Name="DescriptionLine_2__">
+          <DataField>DescriptionLine_2__</DataField>
+        </Field>
+        <Field Name="DateIndicator">
+          <DataField>DateIndicator</DataField>
+        </Field>
+        <Field Name="CheckDateText_Control1020014">
+          <DataField>CheckDateText_Control1020014</DataField>
+        </Field>
+        <Field Name="CheckNoText_Control1020015">
+          <DataField>CheckNoText_Control1020015</DataField>
+        </Field>
+        <Field Name="CompanyAddr_6_">
+          <DataField>CompanyAddr_6_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_5_">
+          <DataField>CompanyAddr_5_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_4_">
+          <DataField>CompanyAddr_4_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_3_">
+          <DataField>CompanyAddr_3_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_2_">
+          <DataField>CompanyAddr_2_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_1_">
+          <DataField>CompanyAddr_1_</DataField>
+        </Field>
+        <Field Name="CheckStyleIndex">
+          <DataField>CheckStyleIndex</DataField>
+        </Field>
+        <Field Name="PageNo_Control1020024">
+          <DataField>PageNo_Control1020024</DataField>
+        </Field>
+        <Field Name="PrintCheck_Number">
+          <DataField>PrintCheck_Number</DataField>
+        </Field>
+        <Field Name="CheckNoText_Control1480000Caption">
+          <DataField>CheckNoText_Control1480000Caption</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
